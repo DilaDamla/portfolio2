@@ -1,0 +1,686 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html{
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    max-height:900px;
+    background-image: url("afbeeldingenn/mountainn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+header{
+    position: sticky;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+/*een z-index is dat het op de voorgrond/achtergrond kan gezet worden */
+
+
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    line-height: 35px;
+}
+/*line-height is de lijn hoogte van de tekst*/
+
+
+
+
+nav ul{
+    line-height: 35px;
+    list-style: none;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+/*transition is dat het er 1 seconde over doet om te bewegen*/
+
+
+
+
+
+nav.black ul{
+    background: rgba(15, 15, 15, 0.97);
+}
+
+
+
+
+
+nav ul li{
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+
+
+
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 10px;
+    padding: 2px;
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    cursor: pointer;
+    line-height: 50px;
+    position: fixed;
+    float: left;
+    margin-left:30px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+/*cursor pointer is dat wanneer je hoverd het een druk knopje wordt, er komt dan een vingertje te voorschijn.*/
+
+
+
+
+.logo img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: -8px;
+}
+
+
+
+
+
+.logo h1{
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+
+
+
+.menu-icon{
+    line-height: 60px;
+    width: 100%;
+    background-color: rgba(14, 14, 14, 0.95);
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+    height: 150vh;
+    margin: 70em auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+    background-image: url("afbeeldingenn/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.content1{
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+    height: 150vh;
+    margin: 60em auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    background-image: url("afbeeldingenn/hobby.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.content2{
+    background-color: #ffffff;
+    color: white;
+    width: 100%;
+    height: 150vh;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    background-image: url("afbeeldingenn/opleiding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+.content3{
+    background-color: #ffffff;
+    color: gray;
+    width: 100%;
+    height: 150vh;
+    margin: 60em auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    background-image: url("afbeeldingenn/cvv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+.content4{
+    background-color: #ffffff;
+    width: 100%;
+    height: 150vh;
+    margin: 60em auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    background-image: url("afbeeldingenn/results.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+.content5{
+    background-color: #ffffff;
+    width: 100%;
+    height: 240vh;
+    margin: 60em auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    background-image: url("afbeeldingenn/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*een background attachment fixed heb je nodig om een parralax effect te maken*/
+
+.content5 h1, h2{
+    line-height: 60px;
+}
+
+.drop h1{
+    padding-top: 140px;
+}
+
+
+
+
+.vakjeWelkom{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:100vh;
+}
+
+.Welkom{
+    display: flex;
+    background-color: rgba(14, 14, 14, 0.95);
+    border: 10px double white ;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    width: 20%;
+    height: 70px;
+}
+
+
+
+
+
+
+/*Dit is van mijn navigatiebar */
+.link-1{
+    text-align: center;
+    transition: 2.5s ease;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0;
+}
+
+
+
+.link-1:hover{
+    padding: 5px;
+
+}
+
+/*dit is mijn copyright text*/
+.copyright{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Gallerij{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.Gallerij :hover{
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.gallery {
+    align-items: center;
+    margin: auto;
+    height: 13%;
+    width: 13%;
+    display: flex;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+table{
+    margin-right: auto;
+    margin-left: auto;
+    width:90%;
+    height:100%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+td {
+    height: 100%;
+    border-radius:10px;
+    border:1px solid rgb(255, 255, 255);
+}
+
+td a:hover{
+    border: none;
+}
+
+
+a{
+    background: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+.html :hover{
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    background-color: rgba(0, 148, 220, 0.39);
+}
+
+.java :hover{
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    background-color: rgba(246, 255, 0, 0.39);
+}
+
+.php :hover{
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    background-color: rgba(20, 0, 250, 0.39);
+}
+
+.mysql :hover{
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    background-color: rgba(198, 101, 0, 0.39);
+}
+
+
+
+
+
+
+
+
+
+
+
+table :hover{
+    border: 1px solid #fadcd7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+    border-radius: 5px;
+    background-color: #c60206;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    padding: 20px;
+    transition: all 2.5s;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    -webkit-transition: width 2s;
+
+
+}
+
+
+.button span a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.button span {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -90px;
+    transition: 1.5s;
+}
+
+
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+
+.instagram{
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    border-radius: 20px;
+    background: #0f0f0f;
+    color: white;
+}
+
+
+.telefoonnummer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.email{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.Vraagje{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+input[type=text], [type=number], [type=email], [type=message] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #009ddc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #006f97;
+
+}
+
+input[type=reset] {
+    background-color: #373737;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #000000;
+
+}
+
+
+
+
+
+
+
+/*het is bedoeld voor kleinere schermen.*/
+/*Dit is hoe het op een telefoon bijvoorbeeld uit gaat zien*/
+@media(max-width: 786px) and (min-width: 100px){
+
+
+    .logo{
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav{
+        width: 100vw;
+    }
+
+    nav ul{
+        max-height: 0;
+        background: rgba(15, 15, 15, 0.93);
+    }
+
+    nav.black ul{
+        background: rgba(15, 15, 15, 0.93);
+    }
+
+    .showing{
+        max-height: 50em;
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .Welkom{
+        width: 30%;
+    }
+
+    .logo img{
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-top: -15px;
+    }
+
+    .content .content1 .content2 .content3 .content4 .content5{
+        min-width: 100px;
+    }
+
+
+    .copyright{
+        color: white;
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+    .content{
+        height: 200vh;
+    }
+
+    .content2{
+        height: 200vh;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+

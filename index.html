@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--ik gebruik bootstrap alleen maar voor de icoontjes-->
+    <link rel="shortcut icon" href="afbeeldingenn/ddk.png">
+    <!--shortcut icon is voor de tablad icootnje-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio website</title>
+</head>
+<body>
+
+<div class="container" id="Home">
+    <div class="nav">
+     <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+
+            <div class="logo">
+                <a href="#Home"><img src="afbeeldingenn/ddk4.png" alt="logo" /> </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a><a class="link-1"></a></li>
+                    <li><a href="#Intro">Mijn intro</a><a class="link-1"></a></li>
+                    <li><a href="#Hobby">Mijn hobby's</a><a class="link-1"></a></li>
+                    <li><a href="#Opleiding">Opleiding</a><a class="link-1"></a></li>
+                    <li><a href="#Cv">Cv</a><a class="link-1"></a></li>
+                    <li><a href="#Resultaten">Resultaten</a><a class="link-1"></a></li>
+                    <li><a href="#Contact">Contact</a><a class="link-1"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="vakjeWelkom">
+        <div class="Welkom">
+           Welkom
+        </div>
+        </div>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    // wanneer je op een kleinere telefoon bent en op de menu icoontje drukt, komt de pagina's te voorschijn.
+
+    $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+
+    // wanneer je op een normale grote scherm naar beneden scrolt wordt de navbar een andere kleur en ik heb dat een zwarte keur gegeven.
+
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+
+        else {
+            $('nav').removeClass('black');
+        }
+    });
+
+
+
+</script>
+
+
+
+<div class="content drop" id="Intro">
+    <h1>Portfolio van Dila Karatas</h1>
+    <p>Ik ben Dila Karatas en ik ben 17 jaar oud. In deze website kan je informaties vinden die over mij gaan en over mijn opleiding. Ik heb deze portfolio website gemaakt,
+        omdat ik graag mezelf wil voorstellen en het een opdracht is voor school tot hoe ver ik deze opleiding al beheersen.</p>
+    <img src="afbeeldingenn/helloo.png" width="230" height="230">
+</div>
+
+
+
+
+
+
+<div class="content1 drop" id="Hobby">
+    <h1>Mijn hobby's</h1>
+    <p>Wat mijn interesses zijn: tekenen, lezen, af en toe sporten (wanneer ik zin heb).
+        De tekeningen die u onderaan ziet heb ik allemaal zelf getekend. Ik ben niet na deze tekeningen meer gaan tekenen,
+        Omdat ik de tijd niet meer ervoor had. maar als het nog kan in de toekomst wil ik echt graag gaan tekenen.
+    </p>
+    <p>Welke programma gebruik ik?</p>
+    <p>Bij mijn tekentablet gebruik ik een Medi-Bang-Paint-Pro programma.
+        Het programma is op een professioneel manier gemaakt. Dat kan je zien aan hoe het in elkaar zit.
+        De meeste beroemde personen tekenen hun tekeningen via deze programma.
+    </p>
+
+   <div class="Gallerij">
+    <div class="gallery">
+        <a target="_blank" href="afbeeldingenn/hinata.jpg">
+            <img src="afbeeldingenn/hinata.jpg" alt="Tekening">
+        </a>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="afbeeldingenn/finally%20mermaidddddddddd.jpg">
+            <img src="afbeeldingenn/finally%20mermaidddddddddd.jpg" alt="Tekening">
+        </a>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="afbeeldingenn/oog.png">
+            <img src="afbeeldingenn/oog.png" alt="Tekening">
+        </a>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="afbeeldingenn/gurlXD.jpg">
+            <img src="afbeeldingenn/gurlXD.jpg" alt="Tekening">
+        </a>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="afbeeldingenn/ace&jason.jpg">
+            <img src="afbeeldingenn/ace&jason.jpg" alt="Tekening">
+        </a>
+    </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="content2 drop" id="Opleiding">
+<div class="eerstetekst">
+    <h1>Wat doen we?</h1>
+    <p>Applicatie en mediaontwikkelaar is een opleiding waarbij je veel inzet moet tonen om hier verder op te komen.
+        Het is niet alleen kwestie van leren en alleen maar coderen,
+        we doen hier van alles, we presenteren, we werken samen met elkaar.
+    </p>
+</div>
+<div class="tweedetekst">
+    <h2>Wat gebruiken wij?</h2>
+    <p>Bij de opleiding Applicatie en mediaontwikkelaar hebben we een paar programma's nodig met name: PHP Storm(voor coderen van PHP)
+        ,Mysql Workbench (voor de database), voor Nederlands en Rekenen gebruiken we soms studiemeter en het boek erbij.
+        Voor Enegls gebruiken we niet altijd de laptop, we zijn meer bezig met het boek.
+    </p>
+
+
+        <table>
+            <tr class="html">
+                <td><a href="https://www.w3schools.com/html/default.asp" target="_blank">Html&Css </a></td>
+            </tr>
+            <tr class="java">
+                <td><a href="https://www.w3schools.com/js/default.asp" target="_blank">Javascript</a></td>
+            </tr>
+            <tr class="php">
+                <td><a href="https://www.w3schools.com/php/default.asp" target="_blank">Php</a></td>
+            </tr>
+            <tr class="mysql">
+                <td><a href="https://www.w3schools.com/sql/default.asp" target="_blank">Mysql</a></td>
+            </tr>
+        </table>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="content3 drop" id="Cv">
+    <h1>Curriculum Vitae</h1>
+    <p>Klik op het button om de cv te downloaden.</p>
+    <h2>Wat zit er in mijn CV?</h2>
+    <p>In mijn cv staan mijn persoonlijke gegevens en wat ik allemaal heb gedaan ect. Ook staat er in wat mijn interesses zijn, maar dan uitgebreider.</p>
+    <button class="button"><span><a href="afbeeldingenn/Cv_Dila.docx" download="Mijn CV">Download</a></span></button>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="content4 drop" id="Resultaten">
+    <h1>Wat ik afgelopen periode heb gedaan.</h1>
+    <p>Wat ik in deze periode allemaal heb gedaan: Hoe ik een moderne
+        website moet maken. De vakken die we op school krijgen hebben allemaal met elkaar te maken,
+        waardoor het makkelijker wordt met het begrijpen van de stoffen die we krijgen. Soms wanneer het niet lukt komen we altijd bij de docenten terecht, ik probeer zoveel mogelijk mijn best te doen door middel van inzet te tonen.
+        Maar als we we verdiepen op de stoffen die we krijgen is het niet zo moeilijk het is kwestie van logisch na denken en het kunnen toepassen.
+    </p>
+
+</div>
+
+
+
+
+
+<div class="content5 drop" id="Contact">
+    <h1>Contact opnemen? Vraagje?</h1>
+    <h2>of een reactie achterlaten?</h2>
+    <p>Doe het hier onder.</p>
+
+
+
+    <!--"hieronder heb ik van het boek toegepast."-->
+
+    <div class="Vraagje">
+
+    <form action="#" method="post">
+        Naam: <br />
+        <input type="text" id="Naam" name="Naam" placeholder="Naam.." required ><br />
+
+        Achternaam: <br />
+        <input type="text" id="Achternaam" name="Achternaam" placeholder="Achternaam.." required ><br />
+
+        E-mail <br />
+        <input type="email" id="E-mail" name="E-mail" placeholder="E-mail.." required ><br />
+
+
+        Telefoonnummer: <br />
+        <input type="text" id="Telefoonnummer" name="Telefoonnummer" placeholder="Telefoonnummer.." required ><br />
+
+
+        Type hieronder uw bericht:<br />
+        <textarea type="message"  id="Tekst" rows="10" cols="60" placeholder="Typ uw bericht..." required ></textarea> <br />
+
+        <!--een placeholder is een tekst dat op een tekstvak is & wanneer je iets typt et weggaat.-->
+        <!--required is dat het een verplichte vakje is. als je het niet invuld kan je het niet verzenden-->
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+    </form>
+
+
+    </div>
+
+    <!--&#xf095 dit is een icoontje-->
+
+    <div class="telefoonnummer">
+        <i class="fa">&#xf095;</i>
+        <p>+316 14599498</p>
+    </div>
+
+    <!--&#xf1d8 dit is een icoontje-->
+    <div class="email">
+        <i class="fa">&#xf1d8;</i>
+        <p>Dila-damla@outlook.com</p>
+    </div>
+
+</div>
+
+
+<!--target="_blank" gaat naar een nieuwe pagina wanneer er erop wordt geklikt.-->
+<div class="instagram">
+<a href="https://www.instagram.com/d40_._/?hl=nl" class="fa fa-instagram" target="_blank"></a>
+</div>
+<!--fa fa zijn icoontjes van font awesome-->
+<div class="copyright">©DDK Copyright 2018 Alle rechten voorbehouden</div>
+
+</body>
+</html>
